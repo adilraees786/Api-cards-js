@@ -1,3 +1,12 @@
+@import: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  background-color: gray;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 #main{
 
     display: flex;
@@ -15,3 +24,28 @@
     border-radius: 10px;
     background-color:tan;
 }
+
+
+
+    #btn{
+        background-color:gold;
+        border: 3px solid #ff0251;
+        color: #ff0251;
+        transition: .3s;
+        margin-bottom: 5px;
+      }
+      #btn:hover {
+        animation: pulse 1s infinite;
+        transition: .3s;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        70% {
+          transform: scale(.9);
+        }
+          100% {
+          transform: scale(1);
+        }
+      }

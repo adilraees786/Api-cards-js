@@ -1366,7 +1366,14 @@ for (let i= 0; i < object.length; i++) {
 <h4>${object[i].car_model_year}</h4>
 <h5>${object[i].car_vin}</h5>
 <h6> Price:${object[i].price}</h6>
+<button id ="btn">Add to Cart</button>
 
 
 </div>`
+
+  const button= document.getElementById("btn")
+  button.addEventListener("click" ,function(){
+    alert("Added to Cart")
+  })
+
 }
